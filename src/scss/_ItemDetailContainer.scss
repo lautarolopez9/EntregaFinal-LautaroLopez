@@ -1,0 +1,10 @@
+/* ItemDetailContainer */
+
+#ItemDetailContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colores, color-2);
+    min-height: calc(100vh - 448px);
+}

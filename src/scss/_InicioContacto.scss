@@ -1,0 +1,18 @@
+/* InicioContacto */
+
+#InicioContacto {
+
+    .InicioContacto__boton {
+        background-color: transparent;
+        color: map-get($colores, color-2);
+        font-weight: bold;
+        border: 2px solid map-get($colores, color-2);
+        height: 50px;
+        width: 150px;
+        border-radius: 15px;
+        font-size: 20px;
+        &:active {
+            scale: 1.1;
+        }
+    }
+}

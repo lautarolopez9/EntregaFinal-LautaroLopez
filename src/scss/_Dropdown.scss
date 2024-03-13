@@ -1,0 +1,19 @@
+/* Dropdown */
+
+#Dropdown {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px map-get($colores, color-4);
+    background-color: map-get($colores, color-2);
+    .dropdown-menu {
+        background-image: linear-gradient(to bottom, #2c73d2, #237bd7, #1983dc, #0d8ae0, #0392e4, #0392e4, #0392e4, #0392e4, #0d8ae0, #1983dc, #237bd7, #2c73d2);
+        .dropdown-item {
+            color: map-get($colores, color-2);
+            font-weight: bold;
+            text-transform: uppercase;
+            
+            &:hover {
+                color: map-get($colores, color-4);
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/* ItemCount */
+
+#ItemCount {
+    display: flex;
+    flex-flow: column  wrap;
+    justify-content: center;
+    align-items: center;
+    .ItemCount__controles {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .svg {
+            width: 40px;
+            height: 40px;
+            color: map-get($colores, color-2);
+            border: 1px solid map-get($colores, color-2);
+            border-radius: 10px;
+            background-image: linear-gradient(to right, #2c73d2, #237bd7, #1983dc, #0d8ae0, #0392e4, #0392e4, #0392e4, #0392e4, #0d8ae0, #1983dc, #237bd7, #2c73d2);
+            box-shadow: 2px 2px 2px map-get($colores, color-4);
+            &:active {
+                scale: 1.1;
+            }    
+        }
+        .controles__numero {
+            text-align: center;
+            font-size: 26px;
+            color: map-get($colores, color-4);
+        }
+    }
+}

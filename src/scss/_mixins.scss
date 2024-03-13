@@ -1,0 +1,22 @@
+/* Mixins Botones */
+
+@mixin botones($color, $background-color, $valor-text-align, $borde) {
+    background-color: $background-color;
+    border: 2px solid $borde;
+    color: $color;
+    height: 40px;
+    width: 90px;
+    text-align: $valor-text-align;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px map-get($colores, color-4);
+    font-weight: bold;
+}
+
+#Boton {
+    @include botones(map-get($colores, color-4), map-get($colores, color-2), center, map-get($colores, color-4));
+    &:active {
+        background-color: map-get($colores, color-4);
+        color: map-get($colores, color-2);
+        border: 2px solid map-get($colores, color-2);
+    }
+}

@@ -1,0 +1,23 @@
+/* Carrito */
+
+#Carrito {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: calc(100vh - 448px);
+    width: 80%;
+    #Boton {
+        background-image: linear-gradient(to right, #2c73d2, #237bd7, #1983dc, #0d8ae0, #0392e4, #0392e4, #0392e4, #0392e4, #0d8ae0, #1983dc, #237bd7, #2c73d2);
+        color: map-get($colores, color-2);
+        border: 2px solid map-get($colores, color-2);
+        box-shadow: 2px 2px 2px map-get($colores, color-4);
+        margin-bottom: 30px;
+        &:active {
+            scale: 1.1;
+        }
+    }
+    #carritoContenedor {
+        width: 100%;
+    }
+}

@@ -1,0 +1,29 @@
+/* Mobile */
+
+@mixin mobile ($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+    
+        @content;
+    }
+}
+
+/* 0px & 469px */
+@include mobile(0px, 469px) {
+    #Links {
+        flex-flow: row wrap;
+    }
+    #CarritoItem {
+        flex-flow: column nowrap;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* 470px & 906px */
+@include mobile(470px, 906px) {
+    #CarritoItem {
+        flex-flow: column nowrap;
+        gap: 10px;
+        text-align: center;
+    }
+}   

@@ -1,0 +1,21 @@
+/* Bienvenida */
+
+#InicioTexto {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+    h3 {
+        text-align: center;
+        color: map-get($colores, color-2);   
+    }
+    .svg {
+        width: 40px;
+        height: 40px;
+        margin: 0px 0px -20px 0px;
+        color: map-get($colores, color-2);
+    }
+}

@@ -1,0 +1,11 @@
+/* Horario */
+
+#Horario {
+    text-align: center;
+    color: map-get($colores, color-2);
+    margin: 30px;
+    h4 {
+        color: map-get($colores, color-2);
+        line-height: 2.0;
+    }
+}
